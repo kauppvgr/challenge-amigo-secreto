@@ -27,9 +27,7 @@ Funcionalidade 4: Após todos os nomes serem preenchidos o sistema precisa reali
 
 <h2> Acesso ao projeto </h2>
 
-Você pode acessar os arquivos do projeto clicando [aqui.](https://github.com/kauppvgr/challenge-amigo-secreto)
-
-
+Você pode acessar os arquivos do projeto clicando [aqui](https://github.com/kauppvgr/challenge-amigo-secreto/tree/main/challenge-amigo-secreto_pt-main)
 
 
 
