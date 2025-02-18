@@ -1,4 +1,4 @@
-let amigos = [];
+let amigos = [];  
 
 function adicionarAmigo() {
     let input = document.getElementById("amigo");
@@ -16,11 +16,14 @@ function adicionarAmigo() {
 
 function atualizarLista() {
     let lista = document.getElementById("listaAmigos");
-    lista.innerHTML = ""; 
-
-    amigos.forEach(function(nome) {
-        lista.innerHTML += "<li>" + nome + "</li>"; 
-    });
+    lista.innerHTML = "";  
+    
+   
+    for (let i = 0; i < amigos.length; i++) {
+        let item = document.createElement("li"); 
+        item.innerText = amigos[i];  
+        lista.appendChild(item); 
+    }
 }
 
 function sortearAmigo() {
@@ -29,9 +32,10 @@ function sortearAmigo() {
         return;
     }
     
-    let indiceSorteado = parseInt(Math.random() * amigos.length); 
+    let indiceSorteado = parseInt(Math.random() * amigos.length);  
     let nomeSorteado = amigos[indiceSorteado];
     
-    document.getElementById("resultado").innerHTML = "<li> " + nomeSorteado + " foi sorteado! </li>";
+    document.getElementById("resultado").innerHTML = "<li>🎉 " + nomeSorteado + " foi sorteado! 🎉</li>";
 }
+
 
